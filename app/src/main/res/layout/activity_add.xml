@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        tools:ignore="Autofill,HardcodedText"
+        tools:context=".ui.add.AddActivity">
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="First name"
+            android:id="@+id/firstNameEditText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Last name"
+            android:id="@+id/lastNameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            android:ems="10"
+            android:hint="Age"
+            android:id="@+id/ageEditText"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:ems="10"
+            android:hint="Mobile"
+            android:id="@+id/mobileEditText"
+            app:layout_constraintTop_toBottomOf="@+id/ageEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:ems="10"
+            android:hint="Password"
+            android:id="@+id/passwordEditText"
+            app:layout_constraintTop_toBottomOf="@+id/mobileEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:maxLength="10"
+            android:ems="10"
+            android:hint="Address"
+            android:id="@+id/addressEditText"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+    />
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:id="@+id/saveButtom"
+            app:layout_constraintTop_toBottomOf="@+id/addressEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
